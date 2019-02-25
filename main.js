@@ -507,6 +507,7 @@ function showCards() {
     }
 }
 
+
 // Ask user which cards to replace: manual choice, oldest X, newest X,
 // random X
 
@@ -518,7 +519,6 @@ function oldestFour() {
     for (i = 0; i < 4; i++) {
         gameCards.shift();
     }
-    console.log('----------------');
     buildGame();
 }
 // Ask user how to display cards in play: order drawn, alphabetically,
