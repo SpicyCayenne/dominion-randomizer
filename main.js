@@ -1,5 +1,5 @@
 // Get list of cards by expansion
-var dominion = [
+/*  var dominion = [
     {
         name: 'Cellar',
         cost: 2,
@@ -458,13 +458,169 @@ var seaside = [
         cost: 5,
         types: ['action', 'duration']
     },
-]
+] */
 // Ask user which expansions to play
 
 // Build game masterLibrary from chosen expansions
-var masterLibrary = [...dominion, ...dominionRemoved, ...intrigue, ...intrigueRemoved, ...seaside];
-var gameCards = [];
-var usedCards = [];
+var masterLibrary = [{
+        name: 'Cellar',
+        cost: 2,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Chapel',
+        cost: 2,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Moat',
+        cost: 2,
+        types: ['action', 'reaction'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Harbinger',
+        cost: 2,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Merchant',
+        cost: 2,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Vassal',
+        cost: 2,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Village',
+        cost: 3,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Workshop',
+        cost: 3,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Bureaucrat',
+        cost: 4,
+        types: ['action', 'attack'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Gardens',
+        cost: 4,
+        types: ['victory'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Militia',
+        cost: 4,
+        types: ['action', 'attack'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Moneylender',
+        cost: 4,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Poacher',
+        cost: 4,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Remodel',
+        cost: 4,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Smithy',
+        cost: 4,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Throne Room',
+        cost: 4,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Bandit',
+        cost: 5,
+        types: ['action', 'attack'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Council Room',
+        cost: 5,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Festival',
+        cost: 5,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Laboratory',
+        cost: 5,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Library',
+        cost: 5,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Market',
+        cost: 5,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Mine',
+        cost: 5,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Sentry',
+        cost: 5,
+        types: ['action'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Witch',
+        cost: 5,
+        types: ['action', 'attack'],
+        expansion: 'dominion'
+    },
+    {
+        name: 'Artisan',
+        cost: 6,
+        types: ['action'],
+        expansion: 'dominion'
+    }];
+// var masterLibrary = [...dominion, ...dominionRemoved, ...intrigue, ...intrigueRemoved, ...seaside];
+//  var gameCards = [];
+//  var usedCards = [];
 
 function resetGame() {
     masterLibrary = [...dominion, ...dominionRemoved, ...intrigue, ...intrigueRemoved, ...seaside];
