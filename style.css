@@ -1,3 +1,7 @@
+body {
+    background-color: dimgray;
+}
+
 #wrapper {
     display: flex;
     flex-direction: row;
@@ -35,6 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: lightgray;
 }
 
 #controls {
