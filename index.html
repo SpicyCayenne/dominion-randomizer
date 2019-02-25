@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "wrapper">
+    <div id = "tableau">
+        <div id = "row-1">
+            <div class = "card"> <p id="card-1">Card 1</p></div>
+            <div class = "card"> <p id="card-2">Card 2</p></div>
+            <div class = "card"> <p id="card-3">Card 3</p></div>
+            <div class = "card"> <p id="card-4">Card 4</p></div>
+            <div class = "card"> <p id="card-5">Card 5</p></div>
+        </div>
+        <div id = "row-2">
+            <div class = "card"> <p id="card-6">Card 6</p></div>
+            <div class = "card"> <p id="card-7">Card 7</p></div>
+            <div class = "card"> <p id="card-8">Card 8</p></div>
+            <div class = "card"> <p id="card-9">Card 9</p></div>
+            <div class = "card"> <p id="card-10">Card 10</p></div>
+        </div>
+    </div>
+    <div id = "controls">
+        <button id="start-game" onclick="resetGame();buildGame();showCards()">Start New Game</button>
+        <button id="next-game" onclick="oldestFour();printCards();showCards()">Replace 4 Oldest & Start Next Game</button>
+        <!-- <button id="pick-expansions">Pick Expansions</button>
+        <button id="choose-replace-method">Choose Replace Method</button> -->
+    </div>
+    </div>
+</body>
+</html>
