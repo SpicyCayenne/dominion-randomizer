@@ -617,13 +617,15 @@ var masterLibrary = [{
         cost: 6,
         types: ['action'],
         expansion: 'dominion'
-    }];
+    }
+];
 // var masterLibrary = [...dominion, ...dominionRemoved, ...intrigue, ...intrigueRemoved, ...seaside];
-//  var gameCards = [];
-//  var usedCards = [];
+var gameLibrary = [...masterLibrary];
+var gameCards = [];
+var usedCards = [];
 
 function resetGame() {
-    masterLibrary = [...dominion, ...dominionRemoved, ...intrigue, ...intrigueRemoved, ...seaside];
+    gameLibrary = [...masterLibrary];
     gameCards = [];
     usedCards = [];
 }
@@ -632,7 +634,7 @@ function resetGame() {
 /*generate random number from 0 to # cards in masterLibrary. Changes
 based on which expansions are selected*/
 function picked() {
-    return Math.floor(Math.random() * masterLibrary.length)
+    return Math.floor(Math.random() * gameLibrary.length)
 }
 
 /*Generate 10 random cards, remove from game masterLibrary, store in
@@ -640,12 +642,12 @@ used masterLibrary. This is so we don't get duplicates within 1 session.*/
 function buildGame() {
     while (gameCards.length < 10) {
         var x = picked();
-        usedCards.push(masterLibrary[x]);
-        gameCards.push(masterLibrary[x]);
-        masterLibrary.splice(x, 1);
+        usedCards.push(gameLibrary[x]);
+        gameCards.push(gameLibrary[x]);
+        gameLibrary.splice(x, 1);
         }
-    if (masterLibrary.length < 10) {
-        alert(masterLibrary.length + " cards remaining!");
+    if (gameLibrary.length < 10) {
+        alert(gameLibrary.length + " cards remaining!");
     }
 }
 
