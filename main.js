@@ -658,10 +658,12 @@ function printCards() {
 }
 
 function showCards() {
-    let myString = ''
-    for (var i = 1; i < 11; i++) {
-        myString = 'card-' + String(i);
-        document.getElementById(myString).innerHTML = gameCards[i-1].name;
+    if (gameLibrary.length > 0) {
+        let myString = ''
+        for (var i = 1; i < 11; i++) {
+            myString = 'card-' + String(i);
+            document.getElementById(myString).innerHTML = gameCards[i-1].name;
+        }
     }
 }
 
