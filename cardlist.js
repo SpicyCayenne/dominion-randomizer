@@ -1636,4 +1636,406 @@ var masterLibrary = [{
     types: ['action', 'gathering'],
     expansion: 'empires'
 },
+{
+    name: 'Druid',
+    cost: 2,
+    types: ['action', 'fate'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Faithful Hound',
+    cost: 2,
+    types: ['action', 'reaction'],
+    expansion: 'nocturne'
+},
+{
+    name: 'guardian',
+    cost: 2,
+    types: ['night', 'duration'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Monatery',
+    cost: 2,
+    types: ['night'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Pixie',
+    cost: 2,
+    types: ['action', 'fate'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Tracker',
+    cost: 2,
+    types: ['action', 'fate'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Changeling',
+    cost: 3,
+    types: ['night'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Fool',
+    cost: 3,
+    types: ['action', 'fate'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Ghost Town',
+    cost: 3,
+    types: ['night', 'duration'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Leprechaun',
+    cost: 3,
+    types: ['action', 'doom'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Night Watchman',
+    cost: 3,
+    types: ['night'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Secret Cave',
+    cost: 4,
+    types: ['action', 'duration'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Bard',
+    cost: 4,
+    types: ['action', 'fate'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Blessed Village',
+    cost: 4,
+    types: ['action', 'fate'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Cemetery',
+    cost: 4,
+    types: ['victory'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Conclave',
+    cost: 4,
+    types: ['action'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Devil\'s Workshop',
+    cost: 4,
+    types: ['night'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Exorcist',
+    cost: 4,
+    types: ['Night'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Necromancer',
+    cost: 4,
+    types: ['action'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Shepherd',
+    cost: 4,
+    types: ['action'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Skulk',
+    cost: 4,
+    types: ['action', 'attack', 'doom'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Cobbler',
+    cost: 5,
+    types: ['night', 'duration'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Crypt',
+    cost: 5,
+    types: ['night', 'duration'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Cursed Village',
+    cost: 5,
+    types: ['action', 'doom'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Den of Sin',
+    cost: 5,
+    types: ['night', 'duration'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Idol',
+    cost: 5,
+    types: ['treasure', 'attack', 'fate'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Pooka',
+    cost: 5,
+    types: ['action'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Sacred Grove',
+    cost: 5,
+    types: ['action', 'fate'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Tormentor',
+    cost: 5,
+    types: ['action', 'attack', 'doom'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Tragic Hero',
+    cost: 5,
+    types: ['action'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Vampire',
+    cost: 5,
+    types: ['night', 'attack', 'doom'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Werewolf',
+    cost: 5,
+    types: ['action', 'night', 'attack', 'doom'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Raider',
+    cost: 6,
+    types: ['night', 'duration', 'attack'],
+    expansion: 'nocturne'
+},
+{
+    name: 'Border Guard',
+    cost: 2,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Ducat',
+    cost: 2,
+    types: ['treasure'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Lackeys',
+    cost: 2,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Acting Troupe',
+    cost: 3,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Cargo Ship',
+    cost: 3,
+    types: ['action', 'duration'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Experiment',
+    cost: 3,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Improve',
+    cost: 3,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Flag Bearer',
+    cost: 4,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Hideout',
+    cost: 4,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Inventor',
+    cost: 4,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Mountain village',
+    cost: 4,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Patron',
+    cost: 4,
+    types: ['action', 'reaction'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Priest',
+    cost: 4,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Research',
+    cost: 4,
+    types: ['action', 'duration'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Silk Merchant',
+    cost: 4,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Old Witch',
+    cost: 5,
+    types: ['action', 'attack'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Recruiter',
+    cost: 5,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Scepter',
+    cost: 5,
+    types: ['treasure'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Scholar',
+    cost: 5,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Sculptor',
+    cost: 5,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Seer',
+    cost: 5,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Spices',
+    cost: 5,
+    types: ['treasure'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Swashbuckler',
+    cost: 5,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Treasurer',
+    cost: 5,
+    types: ['action'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Village',
+    cost: 5,
+    types: ['action', 'attack'],
+    expansion: 'renaissance'
+},
+{
+    name: 'Black Market',
+    cost: 3,
+    types: ['action'],
+    expansion: 'promo'
+},
+{
+    name: 'Dismantle',
+    cost: 4,
+    types: ['action'],
+    expansion: 'promo'
+},
+{
+    name: 'Envoy',
+    cost: 4,
+    types: ['action'],
+    expansion: 'promo'
+},
+{
+    name: 'Sauna/Avanto',
+    cost: 4,
+    types: ['action'],
+    expansion: 'promo'
+},
+/*{
+    name: 'Avanto',
+    cost: 5,
+    types: ['action'],
+    expansion: 'promo'
+},*/
+{
+    name: 'Walled Village',
+    cost: 4,
+    types: ['action'],
+    expansion: 'promo'
+},
+{
+    name: 'Governor',
+    cost: 5,
+    types: ['action'],
+    expansion: 'promo'
+},
+{
+    name: 'Stash',
+    cost: 5,
+    types: ['treasure'],
+    expansion: 'promo'
+},
+{
+    name: 'Prince',
+    cost: 8,
+    types: ['action'],
+    expansion: 'promo'
+}
 ];
