@@ -63,3 +63,10 @@ function oldestFour() {
 }
 // Ask user how to display cards in play: order drawn, alphabetically,
 // by expansion, by cost, random
+
+document.getElementById("start-game").addEventListener("click", resetGame);
+document.getElementById("start-game").addEventListener("click", buildGame);
+document.getElementById("start-game").addEventListener("click", showCards);
+document.getElementById("next-game").addEventListener("click", oldestFour);
+document.getElementById("next-game").addEventListener("click", showCards);
+document.getElementById("help").addEventListener("click", function() {alert('Start New Game replaces ten cards and resets used cards.\nReplace Four Oldest tracks cards you have used and replaces the oldest four in a new game.')});

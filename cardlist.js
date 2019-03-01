@@ -1487,7 +1487,7 @@ var masterLibrary = [{
     expansion: 'empires'
 },
 {
-    name: 'Encampment/Plunder',
+    name: 'Encampment / Plunder',
     cost: 2,
     types: ['action'],
     expansion: 'empires'
@@ -1499,7 +1499,7 @@ var masterLibrary = [{
     expansion: 'empires'
 },*/
 {
-    name: 'Patrician/Emporium',
+    name: 'Patrician / Emporium',
     cost: 2,
     types: ['action'],
     expansion: 'empires'
@@ -1511,7 +1511,7 @@ var masterLibrary = [{
     expansion: 'empires'
 },*/
 {
-    name: 'Settlers/Bustling Village',
+    name: 'Settlers / Bustling Village',
     cost: 2,
     types: ['action'],
     expansion: 'empires'
@@ -1529,7 +1529,7 @@ var masterLibrary = [{
     expansion: 'empires'
 },
 {
-    name: 'Catpult/Rocks',
+    name: 'Catpult / Rocks',
     cost: 3,
     types: ['action', 'attack'],
     expansion: 'empires'
@@ -1649,7 +1649,7 @@ var masterLibrary = [{
     expansion: 'nocturne'
 },
 {
-    name: 'guardian',
+    name: 'Guardian',
     cost: 2,
     types: ['night', 'duration'],
     expansion: 'nocturne'
@@ -1895,7 +1895,7 @@ var masterLibrary = [{
     expansion: 'renaissance'
 },
 {
-    name: 'Mountain village',
+    name: 'Mountain Village',
     cost: 4,
     types: ['action'],
     expansion: 'renaissance'
@@ -2003,7 +2003,7 @@ var masterLibrary = [{
     expansion: 'promo'
 },
 {
-    name: 'Sauna/Avanto',
+    name: 'Sauna / Avanto',
     cost: 4,
     types: ['action'],
     expansion: 'promo'
