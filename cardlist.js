@@ -1,4 +1,4 @@
-var masterLibrary = [{
+let masterLibrary = [{
     name: 'Cellar',
     cost: 2,
     types: ['action'],
