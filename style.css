@@ -1,45 +1,45 @@
 body {
-    background-color: #38023B;
+    background-color: #817E9F;
 }
 
 #wrapper {
-    border-color: red;
-    border-style: dashed;
-    height: 97vh;
+    position: relative;
+    top: 30vmin;
+    background-color: #7FC29B;
     display: grid;
-    grid-template-columns: 80vw 15vw;
-    grid-template-rows: 20vh 60vh 20vh;
-    column-gap: 3vw;
-    grid-template-areas: 
-    ". ."
-    "cards controls"
-    ". ."
+    grid-template-columns: 50fr 20fr 30fr;
+    grid-template-rows: 100fr;
+    column-gap: 5vw;
+    padding: 1vmax;
 }
-#tableau {
-    border-color: yellow;
-    border-style: dashed;
-    padding: 1vw;
-    background-color: #A288E3;
+
+#cards {
     display: grid;
     grid-template-columns: repeat(5, 20fr);
-    grid-template-rows: 50fr 50fr;
+    grid-template-rows: repeat(2, 50fr);
     gap: 1vw;
-    grid-area: cards;
+    grid-row: 2;
+}
+
+#extras {
+    display: grid;
+    grid-template-columns: 20fr;
+    grid-template-rows: repeat(2, 50fr);
+    gap: 1vw;
+    grid-row: 2;
 }
 
 #controls {
-    border-color: green;
-    border-style: dashed;
     display: grid;
-    grid-template-rows: 50fr 50fr;
-    grid-template-columns: 50fr 50fr;
+    grid-template-columns: repeat(2, 50fr);
+    grid-template-rows: repeat(2, 50fr);
     gap: 1vw;
-    grid-area: controls;
+    grid-row: 2;
 }
 
-#controls button {
-    background-color: #CCFFCB   ;
-}
-.card {
-    background-color: #BBD5ED;
+.card, .extra {
+    background-color: #F0F7EE;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }

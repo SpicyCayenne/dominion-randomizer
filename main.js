@@ -55,12 +55,33 @@ function printCards() {
 }
 
 function showCards() {
+    let shelters = false;
+    let plats = false;
     if (gameLibrary.length > 0) {
-        let myString = ''
+        let cardId = ''
         for (let i = 1; i < 11; i++) {
-            myString = 'card-' + String(i);
-            document.getElementById(myString).innerHTML = gameCards[i-1].name;
+            cardId = 'card-' + String(i);
+            document.getElementById(cardId).innerHTML = gameCards[i-1].name;
         }
+    }
+    for (i = 0; i < gameCards.length; i++) {
+        if (gameCards[i].expansion == 'darkAges') {
+            shelters = true;
+        }
+        if (gameCards[i].expansion == 'prosperity') {
+            plats = true;
+        }
+        
+    }
+    if (shelters == true) {
+        document.getElementById("shelter").style.visibility = "visible";
+    } else {
+        document.getElementById("shelter").style.visibility = "hidden";
+    }
+    if (plats == true) {
+        document.getElementById("plat").style.visibility = "visible";
+    } else {
+        document.getElementById("plat").style.visibility = "hidden";
     }
 }
 
