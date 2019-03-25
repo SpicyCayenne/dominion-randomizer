@@ -1,31 +1,50 @@
-let gameLibrary = [...masterLibrary];
+let gameLibrary = [];
 let gameCards = [];
 let usedCards = [];
+let expansionList = ['Dominion', 'Dominion 2E', 'Dominion 1E Removed Cards', 'Intrigue', 'Intrigue 2E', 'Intrigue 1E Removed Cards', 'Seaside', 'Alchemy', 'Prosperity', 'Cornucopia', 'Hinterlands', 'Dark Ages', 'Guilds', 'Adventures', 'Empires', 'Nocturne', 'Renaissance', 'Promo'];
+let gameExpansions = [];
 
 function resetGame() {
-    gameLibrary = [...masterLibrary];
+    setExpansions();
     gameCards = [];
     usedCards = [];
 }
-// Ask user which expansions to play
-function listExpansions() {
-    let selectedExpansions = [];
-    for (i = 0; i < gameLibrary.length; i++) {
-        if (selectedExpansions.indexOf(gameLibrary[i].expansion) == -1) {
-            selectedExpansions.push(gameLibrary[i].expansion);
+
+//Shows and hides the list of expansions
+function showExpansions() {
+    let expansionForm = document.getElementById("expansions");
+    if (expansionForm.style.visibility == 'visible') {
+        expansionForm.style.visibility = 'hidden';
+    } else {
+        expansionForm.style.visibility = 'visible';
+    }
+}
+
+function pickExpansions() {
+    for (let item of expansionList) {
+        let expansion = document.getElementById(item).checked;
+        let expIndex = gameExpansions.indexOf(item);
+        if (expansion === true && expIndex === -1) {
+            gameExpansions.push(item);
+        } else if (expansion === false && expIndex !== -1) {
+            gameExpansions.splice(expIndex, 1);
         }
     }
-    let formattedExpansions = [];    
-    for (let expansion of selectedExpansions) {
-      if (expansion == 'dominionRemoved') {
-        formattedExpansions.push('Dominion - Removed Cards');
-      } else if (expansion == 'intrigueRemoved') {
-        formattedExpansions.push('Intrigue - Removed Cards');
-      } else {
-        formattedExpansions.push(expansion[0].toUpperCase()+expansion.slice(1));
-      }
+}
+
+//sets the game library to all possible cards if no expansions are chosen
+//otherwise checks each card in master library, adds it to game library if its expansion is selected
+//and the card is not already in the library
+function setExpansions() {
+    if (gameExpansions.length === 0) {
+        gameLibrary = [...masterLibrary];   
+    } else {
+        for (card of masterLibrary) {
+            if (gameExpansions.indexOf(card.expansion) != -1 && gameLibrary.indexOf(card) == -1) {
+                gameLibrary.push(card);
+            }
+        }
     }
-    alert('You are playing with: \n' + formattedExpansions.join('\n'));
 }
 
 /*generate random number from 0 to # cards in masterLibrary. Changes
@@ -65,10 +84,10 @@ function showCards() {
         }
     }
     for (i = 0; i < gameCards.length; i++) {
-        if (gameCards[i].expansion == 'darkAges') {
+        if (gameCards[i].expansion == 'Dark Ages') {
             shelters = true;
         }
-        if (gameCards[i].expansion == 'prosperity') {
+        if (gameCards[i].expansion == 'Prosperity') {
             plats = true;
         }
         
@@ -108,4 +127,7 @@ document.getElementById("start-game").addEventListener("click", showCards);
 document.getElementById("next-game").addEventListener("click", oldestFour);
 document.getElementById("next-game").addEventListener("click", showCards);
 document.getElementById("help").addEventListener("click", function() {alert('Start New Game replaces ten cards and resets used cards.\nReplace Four Oldest tracks cards you have used and replaces the oldest four in a new game.')});
-document.getElementById("pick-expansions").addEventListener("click", listExpansions);
+document.getElementById("pick-expansions").addEventListener("click", showExpansions);
+document.getElementById("submitExpansions").addEventListener("click", pickExpansions);
+document.getElementById("submitExpansions").addEventListener("click", setExpansions);
+document.getElementById("submitExpansions").addEventListener("click", showExpansions);
