@@ -4,7 +4,8 @@ body {
 
 #wrapper {
     position: relative;
-    top: 30vmin;
+    top: 33vmin;
+    margin: 0;
     background-color: #7FC29B;
     display: grid;
     grid-template-columns: 50fr 20fr 30fr;
@@ -42,4 +43,18 @@ body {
     display: grid;
     justify-content: center;
     align-items: center;
+}
+
+#expansions {
+    visibility: hidden;
+    min-width: 200px;
+    max-width: 25vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: auto;
+    position: absolute;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
 }

@@ -314,7 +314,7 @@ let masterLibrary = [{
     name: 'Replace',
     cost: 5,
     types: ['action', 'attack'],
-    expansion: 'Intrigue'
+    expansion: 'Intrigue 2E'
 },
 {
     name: 'Torturer',
@@ -350,37 +350,37 @@ let masterLibrary = [{
     name: 'Secret Chamber',
     cost: 2,
     types: ['action', 'reaction'],
-    expansion: 'Intrigue- 1st Edition Removed Cards'
+    expansion: 'Intrigue 1E Removed Cards'
 },
 {
     name: 'Great Hall',
     cost: 3,
     types: ['action', 'victory'],
-    expansion: 'Intrigue- 1st Edition Removed Cards'
+    expansion: 'Intrigue 1E Removed Cards'
 },
 {
     name: 'Coppersmith',
     cost: 4,
     types: ['action'],
-    expansion: 'Intrigue- 1st Edition Removed Cards'
+    expansion: 'Intrigue 1E Removed Cards'
 },
 {
     name: 'Scout',
     cost: 4,
     types: ['action'],
-    expansion: 'Intrigue- 1st Edition Removed Cards'
+    expansion: 'Intrigue 1E Removed Cards'
 },
 {
     name: 'Saboteur',
     cost: 5,
     types: ['action', 'attack'],
-    expansion: 'Intrigue- 1st Edition Removed Cards'
+    expansion: 'Intrigue 1E Removed Cards'
 },
 {
     name: 'Tribute',
     cost: 5,
     types: ['action'],
-    expansion: 'Intrigue- 1st Edition Removed Cards'
+    expansion: 'Intrigue 1E Removed Cards'
 },
 {
     name: 'Embargo',
